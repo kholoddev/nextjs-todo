@@ -1,0 +1,19 @@
+@import '#styles/theme';
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  margin: 0 0 20px;
+  font-size: 40px;
+  color: $color-primary;
+}
+
+.link {
+  font-size: 18px;
+  color: $color-secondary;
+}
