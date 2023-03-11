@@ -321,7 +321,11 @@
     "semi-spacing": "error",
     "semi-style": ["error", "last"],
     "space-before-blocks": "error",
-    "space-before-function-paren": ["error", "never"],
+    "space-before-function-paren": ["error", {
+      "anonymous": "never",
+      "named": "never",
+      "asyncArrow": "always"
+    }],
     "space-in-parens": ["error", "never"],
     "space-infix-ops": "error",
     "space-unary-ops": "error",
@@ -453,7 +457,11 @@
         "@typescript-eslint/semi": ["error", "always"],
         "@typescript-eslint/space-before-blocks": "error",
 				"space-before-function-paren": "off",
-        "@typescript-eslint/space-before-function-paren": ["error", "never"],
+        "@typescript-eslint/space-before-function-paren": ["error", {
+          "anonymous": "never",
+          "named": "never",
+          "asyncArrow": "always"
+        }],
 				"space-infix-ops": "off",
         "@typescript-eslint/space-infix-ops": "error",
 

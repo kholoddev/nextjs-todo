@@ -1,14 +1,15 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
-
-type Data = {
-  name: string
+const handler = () => {
+  return new Response(
+    JSON.stringify({
+      name: 'Jim Halpert',
+    }),
+    {
+      status: 200,
+      headers: {
+        'content-type': 'application/json',
+      },
+    },
+  );
 };
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>,
-) {
-  res
-    .status(200)
-    .json({ name: 'test' });
-}
+export default handler;
